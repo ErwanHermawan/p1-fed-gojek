@@ -16,7 +16,7 @@ import dataLoyalty from "./dataLoyalty";
 const Product = (props) => {
 	return (
 		<>
-			<Header />
+			<Header activeMenu="products" />
 			<Banner data={dataBanner} />
 			<ProductList data={dataProductList} />
 			<Loyalty data={dataLoyalty} />

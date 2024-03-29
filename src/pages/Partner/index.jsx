@@ -13,7 +13,7 @@ import dataJoin from "./dataJoin";
 const Partner = (props) => {
 	return (
 		<>
-			<Header />
+			<Header activeMenu="partner" />
 			<Banner data={dataBanner} />
 			<Feature data={dataFeature} />
 			<Join data={dataJoin} />

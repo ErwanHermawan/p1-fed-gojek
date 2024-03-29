@@ -44,8 +44,9 @@ const Feature = ({ data }) => {
 											: "primary"
 									}
 									href={v.button.to}
+									icon={true}
 								>
-									{v.button.text} <i className="fi-arrow-right"></i>
+									{v.button.text}
 								</Button>
 							</div>
 						</div>

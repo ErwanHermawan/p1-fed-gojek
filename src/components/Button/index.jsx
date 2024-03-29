@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 const Button = (props) => {
-	const { variant = "primary", ghost, children, type } = props;
+	const { variant = "primary", ghost, children, type, icon } = props;
 
 	let variantStyle = "btn ";
 	if (variant === "primary") {
@@ -19,6 +19,7 @@ const Button = (props) => {
 		return (
 			<Link {...props} className={variantStyle}>
 				{children}
+				{icon !== undefined ? <i className="fi-arrow-right"></i> : null}
 			</Link>
 		);
 	}

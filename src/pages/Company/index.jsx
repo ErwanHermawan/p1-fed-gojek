@@ -13,7 +13,7 @@ import dataLoyalty from "./dataLoyalty";
 const Company = (props) => {
 	return (
 		<>
-			<Header />
+			<Header activeMenu="company" />
 			<Banner data={dataBanner} />
 			<Pillar data={dataPillar} />
 			<Loyalty data={dataLoyalty} />

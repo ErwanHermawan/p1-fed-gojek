@@ -11,7 +11,7 @@ import dataTopic from "./dataTopic";
 const Help = (props) => {
 	return (
 		<>
-			<Header />
+			<Header activeMenu="help" />
 			<HeadlineBanner data={dataBanner} />
 			<SectionTopic data={dataTopic} />
 			<Footer />

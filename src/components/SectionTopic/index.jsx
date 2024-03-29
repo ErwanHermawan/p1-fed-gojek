@@ -9,6 +9,9 @@ const SectionTopic = ({ data }) => {
 				<div className="topic__list">
 					{data.item.map((v, i) => (
 						<div className="topic__item" key={`tk-${i}`}>
+							<a href={v.to} className="topic__link">
+								{v.title}
+							</a>
 							<div className="topic__box">
 								<img src={v.logo} alt={v.title} className="topic__logo" />
 								<p className="topic__item__title">{v.title}</p>

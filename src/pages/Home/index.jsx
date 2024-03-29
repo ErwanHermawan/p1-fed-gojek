@@ -15,7 +15,7 @@ import dataLoyalty from "./dataLoyalty";
 const Home = (props) => {
 	return (
 		<>
-			<Header />
+			<Header activeMenu="home" />
 			<Banner data={dataBanner} />
 			<Scale data={dataScale} />
 			<Loyalty data={dataLoyalty} />

@@ -9,7 +9,7 @@ import dataBlog from "./dataBlog";
 const Blog = (props) => {
 	return (
 		<>
-			<Header />
+			<Header activeMenu="blog" />
 			<SectionBLog data={dataBlog} />
 			<Footer />
 		</>
