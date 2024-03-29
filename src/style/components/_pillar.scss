@@ -1,0 +1,51 @@
+.pillar {
+	padding: 80px 0 64px;
+	&__head {
+		margin-bottom: 64px;
+	}
+	&__title {
+		font-size: 48px;
+		line-height: 1.2;
+		font-family: ff(family-title);
+		text-align: center;
+	}
+	&__list {
+		display: flex;
+		width: 100%;
+		gap: 120px;
+	}
+	&__item {
+		width: 33.3333%;
+		background-color: orange;
+		border-radius: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+		gap: 16px;
+		box-shadow: 0px 0px 10px 0px rgba(16, 24, 32, 0.1);
+		&--green {
+			background-color: #7ccc6c;
+		}
+		&--red {
+			background-color: #ff808b;
+		}
+		&--orange {
+			background-color: #ffae62;
+		}
+	}
+	&__text {
+		padding: 32px;
+		&__title {
+			font-size: 26px;
+			line-height: 1.2;
+			font-family: ff(family-title);
+			margin-bottom: 12px;
+		}
+		&__description {
+			font-size: 18px;
+			line-height: 1.2;
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,49 @@
+.join {
+	padding: 56px 0;
+	&__head {
+		margin-bottom: 76px;
+	}
+	&__title {
+		font-family: ff(family-title);
+		font-size: 36px;
+		line-height: 1.2;
+		font-weight: bold;
+		text-align: center;
+	}
+	&__body {
+		display: flex;
+		column-gap: 32px;
+	}
+	&__card {
+		width: 33.3333333%;
+		position: relative;
+		box-shadow: 2px 6px 16px rgba(#000, 0.12);
+		border-radius: 40px;
+		padding: 80px 40px 40px;
+	}
+	&__image {
+		position: absolute;
+		top: -40px;
+		left: 40px;
+		&__el {
+			display: block;
+			width: 80px;
+			height: 80px;
+		}
+	}
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+		&__title {
+			font-size: 24px;
+			font-family: ff(family-title);
+		}
+		&__desc {
+			font-size: 18px;
+			line-height: 1.2;
+			margin-bottom: 32px;
+		}
+	}
+}

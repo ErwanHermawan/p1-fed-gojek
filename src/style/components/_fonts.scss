@@ -1,0 +1,111 @@
+@font-face {
+	font-family: "Maison Neue Book";
+	src: url("../../assets/fonts/MaisonNeue-Book.eot");
+	src: url("../../assets/fonts/MaisonNeue-Book.eot?#iefix")
+			format("embedded-opentype"),
+		url("../../assets/fonts/MaisonNeue-Book.woff2") format("woff2"),
+		url("../../assets/fonts/MaisonNeue-Book.woff") format("woff"),
+		url("../../assets/fonts/MaisonNeue-Book.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Maison Neue Extended";
+	src: url("../../assets/fonts/MaisonNeue-ExtendedExtraBold.eot");
+	src: url("../../assets/fonts/MaisonNeue-ExtendedExtraBold.eot?#iefix")
+			format("embedded-opentype"),
+		url("../../assets/fonts/MaisonNeue-ExtendedExtraBold.woff2") format("woff2"),
+		url("../../assets/fonts/MaisonNeue-ExtendedExtraBold.woff") format("woff"),
+		url("../../assets/fonts/MaisonNeue-ExtendedExtraBold.ttf")
+			format("truetype");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Maison Neue Extended";
+	src: url("../../assets/fonts/MaisonNeue-ExtendedBold.eot");
+	src: url("../../assets/fonts/MaisonNeue-ExtendedBold.eot?#iefix")
+			format("embedded-opentype"),
+		url("../../assets/fonts/MaisonNeue-ExtendedBold.woff2") format("woff2"),
+		url("../../assets/fonts/MaisonNeue-ExtendedBold.woff") format("woff"),
+		url("../../assets/fonts/MaisonNeue-ExtendedBold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "gojek-icon";
+	src: url("../../assets/fonts/gojek-icon.eot?8k80ry");
+	src: url("../../assets/fonts/gojek-icon.eot?8k80ry#iefix")
+			format("embedded-opentype"),
+		url("../../assets/fonts/gojek-icon.ttf?8k80ry") format("truetype"),
+		url("../../assets/fonts/gojek-icon.woff?8k80ry") format("woff"),
+		url("../../assets/fonts/gojek-icon.svg?8k80ry#gojek-icon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="fi-"],
+[class*=" fi-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "gojek-icon" !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.fi-arrow-right:before {
+	content: "\e908";
+}
+.fi-language:before {
+	content: "\e906";
+}
+.fi-location:before {
+	content: "\e907";
+}
+.fi-apple:before {
+	content: "\e900";
+}
+.fi-play-store:before {
+	content: "\e901";
+}
+.fi-youtube:before {
+	content: "\e902";
+}
+.fi-instagram:before {
+	content: "\e903";
+}
+.fi-twitter:before {
+	content: "\e904";
+}
+.fi-facebook:before {
+	content: "\e905";
+}
+
+$font-main: "Maison Neue Book", sans-serif;
+$font-title: "Maison Neue Extended";
+$font-icon: "gojek-icon";
+
+// Font
+$font: (
+	family-main: $font-main,
+	family-title: $font-title,
+	family-icon: $font-icon,
+);
+
+@function ff($name) {
+	@return map-get($font, $name);
+}
