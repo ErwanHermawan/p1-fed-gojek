@@ -1,6 +1,7 @@
+// -- templates
+import Default from "templates/Default";
+
 // -- components
-import Header from "components/Header";
-import Footer from "components/Footer";
 import SectionBLog from "components/SectionBlog";
 
 // -- data
@@ -9,9 +10,9 @@ import dataBlog from "./dataBlog";
 const Blog = (props) => {
 	return (
 		<>
-			<Header activeMenu="blog" />
-			<SectionBLog data={dataBlog} />
-			<Footer />
+			<Default activeMenu="blog">
+				<SectionBLog data={dataBlog} />
+			</Default>
 		</>
 	);
 };

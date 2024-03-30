@@ -1,6 +1,7 @@
+// -- templates
+import Default from "templates/Default";
+
 // -- components
-import Header from "components/Header";
-import Footer from "components/Footer";
 import Banner from "components/Banner";
 import ProductList from "components/ProductList";
 import Loyalty from "components/Loyalty";
@@ -16,13 +17,13 @@ import dataLoyalty from "./dataLoyalty";
 const Product = (props) => {
 	return (
 		<>
-			<Header activeMenu="products" />
-			<Banner data={dataBanner} />
-			<ProductList data={dataProductList} />
-			<Loyalty data={dataLoyalty} />
-			<Feature data={dataFeatureShopping} />
-			<Feature data={dataFeatureBusiness} />
-			<Footer />
+			<Default activeMenu="products">
+				<Banner data={dataBanner} />
+				<ProductList data={dataProductList} />
+				<Loyalty data={dataLoyalty} />
+				<Feature data={dataFeatureShopping} />
+				<Feature data={dataFeatureBusiness} />
+			</Default>
 		</>
 	);
 };

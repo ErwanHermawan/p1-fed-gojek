@@ -1,6 +1,7 @@
+// -- templates
+import Default from "templates/Default";
+
 // -- components
-import Header from "components/Header";
-import Footer from "components/Footer";
 import HeadlineBanner from "components/HeadlineBanner";
 import SectionTopic from "components/SectionTopic";
 
@@ -11,10 +12,10 @@ import dataTopic from "./dataTopic";
 const Help = (props) => {
 	return (
 		<>
-			<Header activeMenu="help" />
-			<HeadlineBanner data={dataBanner} />
-			<SectionTopic data={dataTopic} />
-			<Footer />
+			<Default activeMenu="help">
+				<HeadlineBanner data={dataBanner} />
+				<SectionTopic data={dataTopic} />
+			</Default>
 		</>
 	);
 };

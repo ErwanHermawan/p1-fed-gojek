@@ -166,7 +166,7 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
-				<div className="footer__middle">
+				{/* <div className="footer__middle">
 					<div className="footer__list">
 						<ul className="footer__terms">
 							{data.terms.map((vT, iT) => (
@@ -202,7 +202,7 @@ const Footer = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 				<div className="footer__bottom">
 					<p className="footer__copyright">{data.copyright}</p>
 				</div>

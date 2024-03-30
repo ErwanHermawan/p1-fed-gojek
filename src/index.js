@@ -1,7 +1,7 @@
 // --- core
 import React, { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 // - style
 import "style/app.scss";
@@ -14,6 +14,9 @@ import Company from "pages/Company";
 import Products from "pages/Products";
 import Blog from "pages/Blog";
 import Help from "pages/Help";
+import Login from "pages/Login";
+import Register from "pages/Register";
+import NotFound from "pages/NotFound";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -27,6 +30,10 @@ root.render(
 				<Route path="/products" element={<Products />}></Route>
 				<Route path="/blog" element={<Blog />}></Route>
 				<Route path="/help" element={<Help />}></Route>
+				<Route path="/login" element={<Login />}></Route>
+				<Route path="/register" element={<Register />}></Route>
+				<Route path="/not-found" element={<NotFound />}></Route>
+				<Route path="*" element={<Navigate to="/not-found" />}></Route>
 			</Routes>
 		</BrowserRouter>
 	</StrictMode>
