@@ -1,3 +1,5 @@
+@import "core/styles/_assets.scss";
+
 .header {
 	$h: &;
 	position: fixed;
@@ -5,28 +7,28 @@
 	left: 0;
 	width: 100%;
 	z-index: 9;
-	background-color: #101820;
+	background-color: color(primary);
 	padding: 32px 0;
-	&__inner {
+	&Inner {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
-	&__logo {
-		&__link {
+	&Logo {
+		&Link {
 			display: block;
 		}
-		&__img {
+		&Img {
 			display: block;
 			height: 32px;
 		}
 	}
-	&__menu {
+	&Menu {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 		display: flex;
-		&__item {
+		&Item {
 			font-size: 16px;
 			line-height: 1.3;
 			font-weight: bold;
@@ -35,7 +37,7 @@
 				margin-right: 0;
 			}
 		}
-		&__link {
+		&Link {
 			text-decoration: none;
 			display: block;
 			color: #fff;

@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "Maison Neue Book";
-	src: url("../../assets/fonts/MaisonNeue-Book.eot");
-	src: url("../../assets/fonts/MaisonNeue-Book.eot?#iefix")
+	src: url("../../core/assets/fonts/MaisonNeue-Book.eot");
+	src: url("../../core/assets/fonts/MaisonNeue-Book.eot?#iefix")
 			format("embedded-opentype"),
-		url("../../assets/fonts/MaisonNeue-Book.woff2") format("woff2"),
-		url("../../assets/fonts/MaisonNeue-Book.woff") format("woff"),
-		url("../../assets/fonts/MaisonNeue-Book.ttf") format("truetype");
+		url("../../core/assets/fonts/MaisonNeue-Book.woff2") format("woff2"),
+		url("../../core/assets/fonts/MaisonNeue-Book.woff") format("woff"),
+		url("../../core/assets/fonts/MaisonNeue-Book.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -13,12 +13,14 @@
 
 @font-face {
 	font-family: "Maison Neue Extended";
-	src: url("../../assets/fonts/MaisonNeue-ExtendedExtraBold.eot");
-	src: url("../../assets/fonts/MaisonNeue-ExtendedExtraBold.eot?#iefix")
+	src: url("../../core/assets/fonts/MaisonNeue-ExtendedExtraBold.eot");
+	src: url("../../core/assets/fonts/MaisonNeue-ExtendedExtraBold.eot?#iefix")
 			format("embedded-opentype"),
-		url("../../assets/fonts/MaisonNeue-ExtendedExtraBold.woff2") format("woff2"),
-		url("../../assets/fonts/MaisonNeue-ExtendedExtraBold.woff") format("woff"),
-		url("../../assets/fonts/MaisonNeue-ExtendedExtraBold.ttf")
+		url("../../core/assets/fonts/MaisonNeue-ExtendedExtraBold.woff2")
+			format("woff2"),
+		url("../../core/assets/fonts/MaisonNeue-ExtendedExtraBold.woff")
+			format("woff"),
+		url("../../core/assets/fonts/MaisonNeue-ExtendedExtraBold.ttf")
 			format("truetype");
 	font-weight: bold;
 	font-style: normal;
@@ -27,12 +29,13 @@
 
 @font-face {
 	font-family: "Maison Neue Extended";
-	src: url("../../assets/fonts/MaisonNeue-ExtendedBold.eot");
-	src: url("../../assets/fonts/MaisonNeue-ExtendedBold.eot?#iefix")
+	src: url("../../core/assets/fonts/MaisonNeue-ExtendedBold.eot");
+	src: url("../../core/assets/fonts/MaisonNeue-ExtendedBold.eot?#iefix")
 			format("embedded-opentype"),
-		url("../../assets/fonts/MaisonNeue-ExtendedBold.woff2") format("woff2"),
-		url("../../assets/fonts/MaisonNeue-ExtendedBold.woff") format("woff"),
-		url("../../assets/fonts/MaisonNeue-ExtendedBold.ttf") format("truetype");
+		url("../../core/assets/fonts/MaisonNeue-ExtendedBold.woff2") format("woff2"),
+		url("../../core/assets/fonts/MaisonNeue-ExtendedBold.woff") format("woff"),
+		url("../../core/assets/fonts/MaisonNeue-ExtendedBold.ttf")
+			format("truetype");
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
@@ -40,12 +43,13 @@
 
 @font-face {
 	font-family: "gojek-icon";
-	src: url("../../assets/fonts/gojek-icon.eot?8k80ry");
-	src: url("../../assets/fonts/gojek-icon.eot?8k80ry#iefix")
+	src: url("../../core/assets/fonts/gojek-icon.eot?8k80ry");
+	src: url("../../core/assets/fonts/gojek-icon.eot?8k80ry#iefix")
 			format("embedded-opentype"),
-		url("../../assets/fonts/gojek-icon.ttf?8k80ry") format("truetype"),
-		url("../../assets/fonts/gojek-icon.woff?8k80ry") format("woff"),
-		url("../../assets/fonts/gojek-icon.svg?8k80ry#gojek-icon") format("svg");
+		url("../../core/assets/fonts/gojek-icon.ttf?8k80ry") format("truetype"),
+		url("../../core/assets/fonts/gojek-icon.woff?8k80ry") format("woff"),
+		url("../../core/assets/fonts/gojek-icon.svg?8k80ry#gojek-icon")
+			format("svg");
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
