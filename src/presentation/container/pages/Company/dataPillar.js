@@ -1,6 +1,6 @@
-import speed from "assets/img/dummy/speed.svg";
-import inovation from "assets/img/dummy/innovation.svg";
-import social from "assets/img/dummy/social-impact.svg";
+import speed from "core/assets/img/dummy/speed.svg";
+import inovation from "core/assets/img/dummy/innovation.svg";
+import social from "core/assets/img/dummy/social-impact.svg";
 
 const dataPillar = {
 	title: "The three pillars of Gojek",

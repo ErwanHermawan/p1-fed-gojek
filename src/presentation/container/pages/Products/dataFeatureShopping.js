@@ -1,8 +1,8 @@
-import gofood from "assets/img/dummy/gofood-default.svg";
-import gomart from "assets/img/dummy/gomart-default.svg";
-import gomed from "assets/img/dummy/gomed-default.svg";
-import goshop from "assets/img/dummy/goshop-default.svg";
-import bgshopping from "assets/img/dummy/product-bg-shopping.svg";
+import gofood from "core/assets/img/dummy/gofood-default.svg";
+import gomart from "core/assets/img/dummy/gomart-default.svg";
+import gomed from "core/assets/img/dummy/gomed-default.svg";
+import goshop from "core/assets/img/dummy/goshop-default.svg";
+import bgshopping from "core/assets/img/dummy/product-bg-shopping.svg";
 
 const dataFeatureShopping = {
 	title: "Food & Shopping",

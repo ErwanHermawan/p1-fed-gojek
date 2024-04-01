@@ -1,4 +1,4 @@
-import imgLoyalty from "assets/img/dummy/loyalty.svg";
+import imgLoyalty from "core/assets/img/dummy/loyalty.svg";
 
 const dataLoyalty = {
 	title: "Gojek Loyalty Program",

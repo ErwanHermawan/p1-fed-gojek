@@ -1,4 +1,4 @@
-import imgBanner from "assets/img/dummy/banner-partner.jpg";
+import imgBanner from "core/assets/img/dummy/banner-partner.jpg";
 
 const dataBanner = {
 	image: imgBanner,

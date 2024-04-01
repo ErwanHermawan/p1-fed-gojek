@@ -1,9 +1,9 @@
-import blog1 from "assets/img/dummy/blog-1.jpg";
-import blog2 from "assets/img/dummy/blog-2.jpg";
-import blog3 from "assets/img/dummy/blog-3.jpg";
-import blog4 from "assets/img/dummy/blog-4.jpg";
-import blog5 from "assets/img/dummy/blog-5.jpg";
-import blog6 from "assets/img/dummy/blog-6.jpg";
+import blog1 from "core/assets/img/dummy/blog-1.jpg";
+import blog2 from "core/assets/img/dummy/blog-2.jpg";
+import blog3 from "core/assets/img/dummy/blog-3.jpg";
+import blog4 from "core/assets/img/dummy/blog-4.jpg";
+import blog5 from "core/assets/img/dummy/blog-5.jpg";
+import blog6 from "core/assets/img/dummy/blog-6.jpg";
 
 const dataBlog = {
 	title: "What's On Gojek",

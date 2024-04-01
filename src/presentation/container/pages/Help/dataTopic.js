@@ -1,4 +1,4 @@
-import gojekLogo from "assets/img/dummy/gojek-logo.svg";
+import gojekLogo from "core/assets/img/dummy/gojek-logo.svg";
 
 const dataTopic = {
 	title: "Browse Topics",

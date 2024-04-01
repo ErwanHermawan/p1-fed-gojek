@@ -1,7 +1,7 @@
-import imgscDownload from "assets/img/dummy/app-download.png";
-import imgscDriver from "assets/img/dummy/driver-partner.png";
-import imgscFood from "assets/img/dummy/merchants.png";
-import imgscChart from "assets/img/dummy/jump-download.png";
+import imgscDownload from "core/assets/img/dummy/app-download.png";
+import imgscDriver from "core/assets/img/dummy/driver-partner.png";
+import imgscFood from "core/assets/img/dummy/merchants.png";
+import imgscChart from "core/assets/img/dummy/jump-download.png";
 
 const dataScale = {
 	title: "We scale like a dream",

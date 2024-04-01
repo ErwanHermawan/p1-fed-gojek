@@ -1,8 +1,8 @@
-import gobiz from "assets/img/dummy/gobiz-default.svg";
-import midtrans from "assets/img/dummy/midtrans-default.svg";
-import moka from "assets/img/dummy/moka-default.svg";
-import selly from "assets/img/dummy/selly-default.svg";
-import bgbusiness from "assets/img/dummy/product-bg-business.svg";
+import gobiz from "core/assets/img/dummy/gobiz-default.svg";
+import midtrans from "core/assets/img/dummy/midtrans-default.svg";
+import moka from "core/assets/img/dummy/moka-default.svg";
+import selly from "core/assets/img/dummy/selly-default.svg";
+import bgbusiness from "core/assets/img/dummy/product-bg-business.svg";
 
 const dataFeatureBusiness = {
 	title: "Business",

@@ -1,6 +1,6 @@
-import imgEmployee from "assets/img/dummy/employees.svg";
-import imgDriver from "assets/img/dummy/driver-partner.svg";
-import imgMerchant from "assets/img/dummy/merchant-partner.svg";
+import imgEmployee from "core/assets/img/dummy/employees.svg";
+import imgDriver from "core/assets/img/dummy/driver-partner.svg";
+import imgMerchant from "core/assets/img/dummy/merchant-partner.svg";
 
 const dataJoin = {
 	title: "Join the ride",

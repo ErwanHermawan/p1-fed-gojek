@@ -1,7 +1,7 @@
-import goride from "assets/img/dummy/goride.svg";
-import gocar from "assets/img/dummy/gocar.svg";
-import gosend from "assets/img/dummy/gosend.svg";
-import gobox from "assets/img/dummy/gobox.svg";
+import goride from "core/assets/img/dummy/goride.svg";
+import gocar from "core/assets/img/dummy/gocar.svg";
+import gosend from "core/assets/img/dummy/gosend.svg";
+import gobox from "core/assets/img/dummy/gobox.svg";
 
 const dataFeature = {
 	title: "What drives you?",

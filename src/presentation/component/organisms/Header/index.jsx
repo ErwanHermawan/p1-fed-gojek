@@ -1,7 +1,7 @@
 // -- core
 import { Link } from "react-router-dom";
 
-import gojekLogo from "assets/img/logo/gojek.svg";
+import gojekLogo from "core/assets/img/logo/gojek.svg";
 
 // -- style
 import style from "./style.module.scss";
