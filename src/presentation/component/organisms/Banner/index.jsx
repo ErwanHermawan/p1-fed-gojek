@@ -1,17 +1,17 @@
 // -- style
 import style from "./style.module.scss";
 
-const Banner = ({ data }) => {
+const Banner = (props) => {
 	return (
 		<div className={style.banner}>
 			<div className={style.image}>
-				<img src={data.image} alt={data.title} />
+				<img src={props.image} alt={props.title} />
 			</div>
 			<div className="container">
 				<div className={style.text}>
-					<h1 className={style.title}>{data.title}</h1>
-					{data.description !== undefined ? (
-						<p className={style.description}>{data.description}</p>
+					<h1 className={style.title}>{props.title}</h1>
+					{props.description !== undefined ? (
+						<p className={style.description}>{props.description}</p>
 					) : null}
 				</div>
 			</div>
