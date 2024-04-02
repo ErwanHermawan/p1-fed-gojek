@@ -10,9 +10,9 @@ const Banner = (props) => {
 			<div className="container">
 				<div className={style.text}>
 					<h1 className={style.title}>{props.title}</h1>
-					{props.description !== undefined ? (
+					{props.description && (
 						<p className={style.description}>{props.description}</p>
-					) : null}
+					)}
 				</div>
 			</div>
 		</div>
