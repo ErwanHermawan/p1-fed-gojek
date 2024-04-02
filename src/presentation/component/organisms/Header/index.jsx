@@ -1,74 +1,37 @@
 // -- core
 import { Link } from "react-router-dom";
 
-import gojekLogo from "core/assets/img/logo/gojek.svg";
-
 // -- style
 import style from "./style.module.scss";
 
-const Header = ({ activeMenu }) => {
-	const menuList = [
-		{
-			to: "/",
-			name: "Home",
-			active: "home",
-		},
-		{
-			to: "/partner",
-			name: "Partner with us",
-			active: "partner",
-		},
-		{
-			to: "/careers",
-			name: "Careers",
-			active: "careers",
-		},
-		{
-			to: "/company",
-			name: "Company",
-			active: "company",
-		},
-		{
-			to: "/products",
-			name: "Products",
-			active: "products",
-		},
-		{
-			to: "/blog",
-			name: "Blog",
-			active: "blog",
-		},
-		{
-			to: "/help",
-			name: "Help",
-			active: "help",
-		},
-	];
+// -- data
+import dataHeader from "./dataHeader";
 
+const Header = ({ activeMenu }) => {
 	return (
 		<div className={style.header}>
 			<div className="container">
-				<div className={style.headerInner}>
+				<div className={style.inner}>
 					{/* Logo */}
-					<div className={style.headerLogo}>
-						<Link to="/" className={style.headerLogoLink}>
+					<div className={style.logo}>
+						<Link to="/" className={style.logoLink}>
 							<img
-								src={gojekLogo}
+								src={dataHeader.logo}
 								alt="Gojek Logo"
-								className={style.headerLogoImage}
+								className={style.logoImg}
 							/>
 						</Link>
 					</div>
 					{/* Menu */}
-					<ul className={style.headerMenu}>
-						{menuList.map((val, idx) => (
-							<li className={style.headerMenuItem} key={`hm-${idx}`}>
+					<ul className={style.menu}>
+						{dataHeader.menu.map((val, idx) => (
+							<li className={style.item} key={`hm-${idx}`}>
 								<Link
 									to={val.to}
 									className={
 										val.active === activeMenu
-											? `${style.headerMenuLink} ${style.active}`
-											: `${style.headerMenuLink}`
+											? `${style.link} ${style.active}`
+											: `${style.link}`
 									}
 								>
 									{val.name}
