@@ -1,0 +1,15 @@
+@import "core/styles/_assets.scss";
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 24px;
+	@include font-size(h5);
+	line-height: 1.2;
+	font-weight: bold;
+	background-color: color(primary);
+	color: color(white);
+}

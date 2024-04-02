@@ -1,0 +1,17 @@
+@import "core/styles/_assets.scss";
+
+.join {
+	padding: 56px 0;
+}
+.head {
+	margin-bottom: 76px;
+}
+.title {
+	font-family: ff(title);
+	@include font-size(h2);
+	text-align: center;
+}
+.list {
+	display: flex;
+	column-gap: 32px;
+}

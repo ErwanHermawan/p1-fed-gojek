@@ -8,21 +8,24 @@ const dataJoin = {
 		{
 			img: imgEmployee,
 			title: "Employees",
-			desc: "Behind Southeast Asia’s only hyper-growth startup are some billion-dollar brains, doing what they do best.",
+			description:
+				"Behind Southeast Asia’s only hyper-growth startup are some billion-dollar brains, doing what they do best.",
 			btnTo: "employees",
 			btnText: "Join as employee",
 		},
 		{
 			img: imgDriver,
 			title: "Driver partners",
-			desc: "We’re home to 2 million+ driver partners, who enjoy a bundle of health and financial benefits.",
+			description:
+				"We’re home to 2 million+ driver partners, who enjoy a bundle of health and financial benefits.",
 			btnTo: "driver",
 			btnText: "Join as a driver partner",
 		},
 		{
 			img: imgMerchant,
 			title: "Merchants",
-			desc: "We empower 500,000+ merchants with cutting-edge technologies that help them multiply reach and sales.",
+			description:
+				"We empower 500,000+ merchants with cutting-edge technologies that help them multiply reach and sales.",
 			btnTo: "merchant",
 			btnText: "Join as a merchant",
 		},

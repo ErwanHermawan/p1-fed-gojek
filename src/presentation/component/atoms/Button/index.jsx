@@ -1,33 +1,27 @@
 // -- core
 import { Link } from "react-router-dom";
 
+// -- style
+import style from "./style.module.scss";
+
 const Button = (props) => {
-	const { variant = "primary", ghost, children, type, icon } = props;
-
-	let variantStyle = "btn ";
-	if (variant === "primary") {
-		variantStyle += "btn-primary";
-	} else if (variant === "text") {
-		variantStyle += "btn-text";
-	}
-
-	if (ghost) {
-		variantStyle += "btn-ghost";
-	}
-
-	if (type) {
-		return (
-			<Link {...props} className={variantStyle}>
-				{children}
-				{icon !== undefined ? <i className="fi-arrow-right"></i> : null}
-			</Link>
-		);
-	}
+	const { to, text, type, icon } = props;
 
 	return (
-		<button {...props} className={variantStyle}>
-			{children}
-		</button>
+		<>
+			{to && (
+				<Link to={to} className={style.btn}>
+					{text}
+					{icon && <i className={`fi-${icon}`}></i>}
+				</Link>
+			)}
+			{!to && (
+				<button type={type} className={style.btn}>
+					{text}
+					{icon && <i className={`fi-${icon}`}></i>}
+				</button>
+			)}
+		</>
 	);
 };
 

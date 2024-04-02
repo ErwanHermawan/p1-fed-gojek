@@ -5,7 +5,7 @@ import Default from "presentation/component/templates/Default";
 import Banner from "presentation/component/organisms/Banner";
 import Scale from "presentation/component/organisms/Scale";
 import Loyalty from "presentation/component/organisms/Loyalty";
-import Join from "presentation/component/organisms/Join";
+import SectionJoin from "presentation/component/organisms/SectionJoin";
 
 // -- data
 import dataBanner from "./dataBanner";
@@ -20,7 +20,7 @@ const Home = (props) => {
 				<Banner data={dataBanner} />
 				<Scale data={dataScale} />
 				<Loyalty data={dataLoyalty} />
-				<Join data={dataJoin} />
+				<SectionJoin {...dataJoin} />
 			</Default>
 		</>
 	);
