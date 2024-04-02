@@ -1,3 +1,106 @@
+@import "core/styles/_assets.scss";
+
 .footer {
-	background-color: red;
+	padding: 64px 0;
+	background-color: color(black);
+	color: color(white);
+}
+.top {
+	padding: 40px 0;
+	border-bottom: solid 1px #63666a;
+}
+.logo {
+	margin-bottom: 56px;
+	&Img {
+		display: block;
+	}
+}
+.list {
+	display: flex;
+	justify-content: space-between;
+}
+.title {
+	@include font-size(h5);
+	font-weight: fw(bold);
+	margin-bottom: 32px;
+}
+.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.item {
+	display: block;
+	margin-bottom: 24px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.link {
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 1.2;
+}
+.sosmed .nav {
+	margin-bottom: 24px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.sosmed .item {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 32px;
+	margin-bottom: 0;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.sosmed .link {
+	text-decoration: none;
+	@include font-size(h3);
+}
+.middle {
+	padding: 40px 0;
+}
+.middle .menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(170px, 1fr));
+	gap: 20px;
+}
+.middle .item {
+	margin: 0;
+}
+.middle .link {
+	text-decoration: underline;
+}
+.form {
+	display: flex;
+	align-items: center;
+}
+.form i {
+	font-size: 24px;
+	padding: 8px;
+}
+.input {
+	display: inline-block;
+	background-color: transparent;
+	border: solid 1px #d3d3d33d;
+	height: 48px;
+	width: 320px;
+	border-radius: 24px;
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 24px;
+}
+.bottom {
+	padding: 40px 0;
+}
+.copyright {
+	font-size: 16px;
+	line-height: 1.2;
+	margin-bottom: 0;
 }
