@@ -1,5 +1,4 @@
 const SectionTopic = ({ data }) => {
-	console.log(data);
 	return (
 		<div className="topic">
 			<div className="container">

@@ -1,5 +1,4 @@
 import style from "./style.module.scss";
-console.log(style);
 
 const ScaleItem = (props) => {
 	const { image, title, description, bg } = props;
