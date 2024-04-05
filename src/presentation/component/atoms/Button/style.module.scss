@@ -7,8 +7,7 @@
 	padding: 12px 24px;
 	border: none;
 	border-radius: 24px;
-	@include font-size(h5);
-	line-height: 1.2;
+	@include font-size(h6);
 	font-weight: bold;
 	background-color: color(primary);
 	color: color(white);

@@ -1,0 +1,28 @@
+@import "core/styles/_assets.scss";
+
+.loyalty {
+	padding: 56px 0;
+	background-color: color(black);
+	color: color(white);
+}
+.wrapper {
+	display: flex;
+	align-items: center;
+}
+.img {
+	&El {
+		display: block;
+	}
+}
+.text {
+	margin-left: 32px;
+}
+.title {
+	font-family: ff(title);
+	@include font-size(h1);
+	font-weight: bold;
+	text-align: center;
+}
+.dedescription {
+	margin-bottom: 24px;
+}

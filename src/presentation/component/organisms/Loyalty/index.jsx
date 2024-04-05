@@ -1,27 +1,27 @@
 // -- components
 import Button from "presentation/component/atoms/Button";
 
+// -- style
+import style from "./style.module.scss";
+
 const Loyalty = (props) => {
-	const { data } = props;
 	return (
-		<div className="loyalty">
+		<div className={style.loyalty}>
 			<div className="container">
-				<div className="loyalty__wrapper">
-					<div className="loyalty__img">
+				<div className={style.wrapper}>
+					<div className={style.image}>
 						<img
-							src={data.image}
-							alt={data.title}
-							className="loyalty__img__el"
+							src={props.image}
+							alt={props.title}
+							className={style.imageEl}
 						/>
 					</div>
-					<div className="loyalty__text">
-						<h2 className="loyalty__title">{data.title}</h2>
-						{data.desc !== undefined ? (
-							<p className="loyalty__desc">{data.desc}</p>
-						) : null}
-						<Button type="link" variant="primary" href={data.btnTo}>
-							{data.btnText}
-						</Button>
+					<div className={style.text}>
+						<h2 className={style.title}>{props.title}</h2>
+						{props.description && (
+							<p className={style.description}>{props.description}</p>
+						)}
+						<Button to={props.button.to} text={props.button.text} />
 					</div>
 				</div>
 			</div>

@@ -19,7 +19,7 @@ const Home = (props) => {
 			<Default activeMenu="home">
 				<Banner {...dataBanner} />
 				<SectionScale {...dataScale} />
-				<Loyalty data={dataLoyalty} />
+				<Loyalty {...dataLoyalty} />
 				<SectionJoin {...dataJoin} />
 			</Default>
 		</>
