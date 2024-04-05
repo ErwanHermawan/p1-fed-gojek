@@ -3,7 +3,7 @@ import Default from "presentation/component/templates/Default";
 
 // -- components
 import Banner from "presentation/component/organisms/Banner";
-import Scale from "presentation/component/organisms/Scale";
+import SectionScale from "presentation/component/organisms/SectionScale";
 import Loyalty from "presentation/component/organisms/Loyalty";
 import SectionJoin from "presentation/component/organisms/SectionJoin";
 
@@ -18,7 +18,7 @@ const Home = (props) => {
 		<>
 			<Default activeMenu="home">
 				<Banner {...dataBanner} />
-				<Scale data={dataScale} />
+				<SectionScale {...dataScale} />
 				<Loyalty data={dataLoyalty} />
 				<SectionJoin {...dataJoin} />
 			</Default>

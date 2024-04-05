@@ -1,0 +1,43 @@
+@import "core/styles/_assets.scss";
+
+.card {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 40px;
+	background-color: color(white);
+	box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.1);
+}
+.green {
+	background-color: #7ccc6c;
+	box-shadow: 0px 0px 32px 10px #b2e5b8;
+}
+.purple {
+	background-color: #d48bc8;
+	box-shadow: 0px 0px 32px 10px #d0b4d4;
+}
+.orange {
+	background-color: #ffae62;
+	box-shadow: 0px 0px 32px 10px #fbdcbe;
+}
+.blue {
+	background-color: #4ac9e3;
+	box-shadow: 0px 0px 32px 10px #b2e6f2;
+}
+.image {
+	transform: translateY(-80px);
+	&El {
+		display: block;
+	}
+}
+.text {
+	padding: 0 40px 40px;
+}
+.title {
+	@include font-size(h2);
+	font-family: ff(title);
+}
+.desc {
+	@include font-size(body);
+	margin-bottom: 0;
+}
