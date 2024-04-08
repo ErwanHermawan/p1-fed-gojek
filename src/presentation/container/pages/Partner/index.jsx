@@ -3,7 +3,7 @@ import Default from "presentation/component/templates/Default";
 
 // -- components
 import Banner from "presentation/component/organisms/Banner";
-import Feature from "presentation/component/organisms/Feature";
+import SectionFeature from "presentation/component/organisms/SectionFeature";
 import Join from "presentation/component/organisms/SectionJoin";
 
 // -- data
@@ -15,9 +15,9 @@ const Partner = (props) => {
 	return (
 		<>
 			<Default activeMenu="partner">
-				<Banner data={dataBanner} />
-				<Feature data={dataFeature} />
-				<Join data={dataJoin} />
+				<Banner {...dataBanner} />
+				<SectionFeature {...dataFeature} />
+				<Join {...dataJoin} />
 			</Default>
 		</>
 	);

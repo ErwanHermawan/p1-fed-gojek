@@ -5,7 +5,7 @@ import Default from "presentation/component/templates/Default";
 import Banner from "presentation/component/organisms/Banner";
 import ProductList from "presentation/component/organisms/ProductList";
 import Loyalty from "presentation/component/organisms/Loyalty";
-import Feature from "presentation/component/organisms/Feature";
+import Feature from "presentation/component/organisms/SectionFeature";
 
 // -- data
 import dataBanner from "./dataBanner";

@@ -3,7 +3,7 @@ import Default from "presentation/component/templates/Default";
 
 // -- components
 import Banner from "presentation/component/organisms/Banner";
-import Feature from "presentation/component/organisms/Feature";
+import Feature from "presentation/component/organisms/SectionFeature";
 import Join from "presentation/component/organisms/SectionJoin";
 
 // -- data
