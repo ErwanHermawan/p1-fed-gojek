@@ -13,7 +13,6 @@ const FeatureItem = (props) => {
 						src={props.image}
 						alt="feature"
 						className={style.imageEl}
-						width="149"
 						height="32"
 					/>
 				</div>

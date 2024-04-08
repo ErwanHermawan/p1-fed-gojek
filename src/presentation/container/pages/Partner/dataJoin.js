@@ -20,8 +20,6 @@ const dataJoin = {
 			title: "Driver partners",
 			description:
 				"We’re home to 2 million+ driver partners, who enjoy a bundle of health and financial benefits.",
-			btnTo: "driver",
-			btnText: "Join as a driver partner",
 			button: {
 				to: "/driver",
 				text: "Join as a driver partner",
@@ -32,8 +30,6 @@ const dataJoin = {
 			title: "Merchants",
 			description:
 				"We empower 500,000+ merchants with cutting-edge technologies that help them multiply reach and sales.",
-			btnTo: "merchant",
-			btnText: "Join as a merchant",
 			button: {
 				to: "/merchant",
 				text: "Join as a merchant",

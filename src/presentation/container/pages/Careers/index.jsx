@@ -15,9 +15,9 @@ const Career = (props) => {
 	return (
 		<>
 			<Default activeMenu="careers">
-				<Banner data={dataBanner} />
-				<Feature data={dataFeature} />
-				<Join data={dataJoin} />
+				<Banner {...dataBanner} />
+				<Feature {...dataFeature} />
+				<Join {...dataJoin} />
 			</Default>
 		</>
 	);

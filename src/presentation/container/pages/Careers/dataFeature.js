@@ -12,7 +12,7 @@ const dataFeature = {
 				"Reach more potential customers and get easy delivery services with GoFood.",
 			button: {
 				to: "/",
-				text: "Register",
+				text: "Know more",
 			},
 		},
 		{
@@ -21,7 +21,7 @@ const dataFeature = {
 				"An easier and faster payment system, without the hassle of preparing for change.",
 			button: {
 				to: "/",
-				text: "Register",
+				text: "Know more",
 			},
 		},
 		{
@@ -30,7 +30,7 @@ const dataFeature = {
 				"Manage sales reports easily with an integrated online system.",
 			button: {
 				to: "/",
-				text: "Register",
+				text: "Know more",
 			},
 		},
 		{
@@ -39,7 +39,7 @@ const dataFeature = {
 				"Manage sales reports easily with an integrated online system.",
 			button: {
 				to: "/",
-				text: "Register",
+				text: "Know more",
 			},
 		},
 	],
