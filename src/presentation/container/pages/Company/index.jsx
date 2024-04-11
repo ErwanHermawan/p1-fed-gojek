@@ -3,7 +3,7 @@ import Default from "presentation/component/templates/Default";
 
 // -- components
 import Banner from "presentation/component/organisms/Banner";
-import Pillar from "presentation/component/organisms/Pillar";
+import Pillar from "presentation/component/organisms/SectionPillar";
 import Loyalty from "presentation/component/organisms/Loyalty";
 
 // -- data
@@ -15,9 +15,9 @@ const Company = (props) => {
 	return (
 		<>
 			<Default activeMenu="company">
-				<Banner data={dataBanner} />
-				<Pillar data={dataPillar} />
-				<Loyalty data={dataLoyalty} />
+				<Banner {...dataBanner} />
+				<Pillar {...dataPillar} />
+				<Loyalty {...dataLoyalty} />
 			</Default>
 		</>
 	);

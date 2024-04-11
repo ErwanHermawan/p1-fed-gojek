@@ -1,0 +1,18 @@
+@import "core/styles/_assets.scss";
+
+.pillar {
+	padding: 80px 0 64px;
+}
+.head {
+	margin-bottom: 64px;
+}
+.title {
+	@include font-size(h1);
+	font-family: ff(title);
+	text-align: center;
+}
+.list {
+	display: flex;
+	width: 100%;
+	gap: 120px;
+}

@@ -1,0 +1,36 @@
+@import "core/styles/_assets.scss";
+
+.item {
+	width: 33.3333%;
+	background-color: color(white);
+	border-radius: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	gap: 16px;
+	box-shadow: 0px 0px 10px 0px rgba(16, 24, 32, 0.1);
+}
+.green {
+	background-color: #7ccc6c;
+}
+.red {
+	background-color: #ff808b;
+}
+.orange {
+	background-color: #ffae62;
+}
+.text {
+	padding: 32px;
+}
+.title {
+	font-size: 26px;
+	line-height: 1.2;
+	font-family: ff(family-title);
+	margin-bottom: 12px;
+}
+.description {
+	font-size: 18px;
+	line-height: 1.2;
+	margin-bottom: 0;
+}
