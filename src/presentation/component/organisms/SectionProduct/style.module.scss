@@ -1,0 +1,12 @@
+@import "core/styles/_assets.scss";
+
+.section {
+	$p: &;
+	padding: 80px 0;
+	background-color: color(black);
+}
+.list {
+	display: flex;
+	gap: 24px;
+	height: 100%;
+}

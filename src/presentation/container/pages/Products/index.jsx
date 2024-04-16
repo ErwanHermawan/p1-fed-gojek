@@ -3,9 +3,9 @@ import Default from "presentation/component/templates/Default";
 
 // -- components
 import Banner from "presentation/component/organisms/Banner";
-import ProductList from "presentation/component/organisms/ProductList";
+import SectionProduct from "presentation/component/organisms/SectionProduct";
 import Loyalty from "presentation/component/organisms/Loyalty";
-import Feature from "presentation/component/organisms/SectionFeature";
+import SectionFeature from "presentation/component/organisms/SectionFeature";
 
 // -- data
 import dataBanner from "./dataBanner";
@@ -18,11 +18,11 @@ const Product = (props) => {
 	return (
 		<>
 			<Default activeMenu="products">
-				<Banner data={dataBanner} />
-				<ProductList data={dataProductList} />
-				<Loyalty data={dataLoyalty} />
-				<Feature data={dataFeatureShopping} />
-				<Feature data={dataFeatureBusiness} />
+				<Banner {...dataBanner} />
+				<SectionProduct data={dataProductList} />
+				<Loyalty {...dataLoyalty} />
+				<SectionFeature {...dataFeatureShopping} />
+				<SectionFeature {...dataFeatureBusiness} />
 			</Default>
 		</>
 	);
