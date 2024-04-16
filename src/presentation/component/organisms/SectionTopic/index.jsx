@@ -1,21 +1,18 @@
-const SectionTopic = ({ data }) => {
+import TopicItem from "presentation/component/molecules/TopicItem";
+
+// -- style
+import style from "./style.module.scss";
+
+const SectionTopic = (props) => {
 	return (
-		<div className="topic">
+		<div className={style.topic}>
 			<div className="container">
-				<div className="topic__head">
-					<h2 className="topic__title">{data.title}</h2>
+				<div className={style.head}>
+					<h2 className={style.title}>{props.title}</h2>
 				</div>
-				<div className="topic__list">
-					{data.item.map((v, i) => (
-						<div className="topic__item" key={`tk-${i}`}>
-							<a href={v.to} className="topic__link">
-								{v.title}
-							</a>
-							<div className="topic__box">
-								<img src={v.logo} alt={v.title} className="topic__logo" />
-								<p className="topic__item__title">{v.title}</p>
-							</div>
-						</div>
+				<div className={style.list}>
+					{props.item.map((val, idx) => (
+						<TopicItem {...val} key={`tk-${idx}`} />
 					))}
 				</div>
 			</div>

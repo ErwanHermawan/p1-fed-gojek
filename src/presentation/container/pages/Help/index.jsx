@@ -6,15 +6,15 @@ import HeadlineBanner from "presentation/component/organisms/HeadlineBanner";
 import SectionTopic from "presentation/component/organisms/SectionTopic";
 
 // -- data
-import dataBanner from "./dataBanner";
+import dataHeadline from "./dataHeadline";
 import dataTopic from "./dataTopic";
 
 const Help = (props) => {
 	return (
 		<>
 			<Default activeMenu="help">
-				<HeadlineBanner data={dataBanner} />
-				<SectionTopic data={dataTopic} />
+				<HeadlineBanner {...dataHeadline} />
+				<SectionTopic {...dataTopic} />
 			</Default>
 		</>
 	);

@@ -1,0 +1,19 @@
+@import "core/styles/_assets.scss";
+
+.topic {
+	padding: 64px 0;
+}
+.head {
+	margin-bottom: 48px;
+}
+.title {
+	@include font-size(h1);
+	font-family: ff(title);
+	text-align: center;
+	margin-bottom: 0;
+}
+.list {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 16px;
+}

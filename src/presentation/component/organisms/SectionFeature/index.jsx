@@ -7,16 +7,19 @@ import style from "./style.module.scss";
 const SectionFeature = (props) => {
 	const { item, title, description, bg } = props;
 
-	let styleName = (style.feature += " " + style.product);
-	switch (bg.color) {
-		case "red":
-			styleName += " " + style.red;
-			break;
-		case "purple":
-			styleName += " " + style.purple;
-			break;
-		default:
-			styleName = style.feature += " " + style.product;
+	let styleName = style.feature;
+	if (bg) {
+		styleName = style.feature += " " + style.product;
+		switch (bg.color) {
+			case "red":
+				styleName += " " + style.red;
+				break;
+			case "purple":
+				styleName += " " + style.purple;
+				break;
+			default:
+				styleName = style.feature += " " + style.product;
+		}
 	}
 
 	return (
