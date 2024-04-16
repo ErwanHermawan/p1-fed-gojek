@@ -1,0 +1,44 @@
+@import "core/styles/_assets.scss";
+
+.blog {
+	padding: 56px 0;
+}
+.head {
+	margin-bottom: 48px;
+}
+.title {
+	font-size: 48px;
+	line-height: 1.2;
+	font-family: ff(title);
+	font-weight: 900;
+}
+.description {
+	@include font-size(h5);
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.list {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 16px;
+	margin-bottom: 48px;
+}
+.pagination {
+	&Link {
+		display: inline-block;
+		text-decoration: none;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		border: solid 1px color(primary);
+		font-size: 32px;
+		position: relative;
+		color: color(primary);
+		i {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}

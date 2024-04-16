@@ -11,7 +11,7 @@ const Blog = (props) => {
 	return (
 		<>
 			<Default activeMenu="blog">
-				<SectionBLog data={dataBlog} />
+				<SectionBLog {...dataBlog} />
 			</Default>
 		</>
 	);

@@ -1,29 +1,24 @@
-const SectionBLog = ({ data }) => {
+// -- components
+import BlogItem from "presentation/component/molecules/BlogItem";
+
+// -- style
+import style from "./style.module.scss";
+
+const SectionBLog = (props) => {
 	return (
-		<div className="blog">
+		<div className={style.blog}>
 			<div className="container">
-				<div className="blog__head">
-					<h1 className="blog__title">{data.title}</h1>
-					<p className="blog__description">{data.description}</p>
+				<div className={style.head}>
+					<h1 className={style.title}>{props.title}</h1>
+					<p className={style.description}>{props.description}</p>
 				</div>
-				<div className="blog__list">
-					{data.item.map((v, i) => (
-						<div className="blog__item" key={`bk-${i}`}>
-							<a href={v.to} className="blog__link">
-								{v.title}
-							</a>
-							<div className="blog__image">
-								<img src={v.image} alt={v.title} className="blog__image__el" />
-							</div>
-							<div className="blog__text">
-								<h3 className="blog__text__title">{v.title}</h3>
-								<p className="blog__text__date">{v.date}</p>
-							</div>
-						</div>
+				<div className={style.list}>
+					{props.item.map((val, idx) => (
+						<BlogItem {...val} key={`bk-${idx}`} />
 					))}
 				</div>
-				<div className="blog__paging">
-					<a href="/" className="blog__paging__link">
+				<div className={style.pagination}>
+					<a href="/" className={style.paginationLink}>
 						<i className="fi-arrow-right"></i>
 					</a>
 				</div>
