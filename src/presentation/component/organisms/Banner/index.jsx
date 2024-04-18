@@ -7,8 +7,16 @@ const Banner = (props) => {
 			<div className={style.image}>
 				<img src={props.image} alt={props.title} />
 			</div>
-			<div className="container">
-				<div className={style.text}>
+			{props.embed && (
+				<div className={style.iframe}>
+					<iframe
+						src={`https://www.youtube.com/embed/${props.embed}?enablejsapi=1&amp;version=3&amp;controls=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=${props.embed}&amp;playsinline=1`}
+						title={props.title}
+					></iframe>
+				</div>
+			)}
+			<div className={style.text}>
+				<div className="container">
 					<h1 className={style.title}>{props.title}</h1>
 					{props.description && (
 						<p className={style.description}>{props.description}</p>
