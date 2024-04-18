@@ -1,0 +1,24 @@
+@import "core/styles/_assets.scss";
+
+.notfound {
+	padding: 48px 0;
+}
+.inner {
+	display: flex;
+	gap: 120px;
+}
+.image,
+.text {
+	width: 50%;
+}
+.text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.title {
+	@include font-size(h2);
+}
+.description {
+	@include font-size(h5);
+}
