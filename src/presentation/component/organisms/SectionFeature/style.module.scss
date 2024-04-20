@@ -12,7 +12,10 @@
 }
 .product {
 	padding-bottom: 140px;
-	color: #101820;
+	color: color(black);
+	.title {
+		color: color(black);
+	}
 }
 .red {
 	background-color: #ff808b;

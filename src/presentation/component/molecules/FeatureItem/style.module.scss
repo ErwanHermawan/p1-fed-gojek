@@ -10,6 +10,10 @@
 	color: color(White);
 	border-radius: 40px;
 }
+.white {
+	background-color: color(white);
+	color: color(black);
+}
 .title {
 	@include font-size(h3);
 	font-family: ff(title);

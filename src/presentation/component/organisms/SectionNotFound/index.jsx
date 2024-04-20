@@ -21,7 +21,7 @@ const SectionNotFound = () => {
 							But don't be sad #ThereIsAlwaysAWay for you!
 						</p>
 						<div className={style.button}>
-							<Button to="/" text="Back to homepage" />
+							<Button to="/" variant="outline" text="Back to homepage" />
 						</div>
 					</div>
 				</div>

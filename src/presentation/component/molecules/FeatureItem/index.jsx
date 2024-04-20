@@ -5,8 +5,18 @@ import Button from "presentation/component/atoms/Button";
 import style from "./style.module.scss";
 
 const FeatureItem = (props) => {
+	let styleName = style.item;
+	if (props.section) {
+		switch (props.section) {
+			case "product":
+				styleName += " " + style.white;
+				break;
+			default:
+				styleName = style.item;
+		}
+	}
 	return (
-		<div className={style.item}>
+		<div className={styleName}>
 			{props.image && (
 				<div className={style.image}>
 					<img
@@ -20,7 +30,12 @@ const FeatureItem = (props) => {
 			{props.title && <h3 className={style.title}> {props.title}</h3>}
 			<p className={style.description}>{props.description}</p>
 			<div className={style.button}>
-				<Button href={props.button.to} text={props.button.text} />
+				<Button
+					to={props.button.to}
+					text={props.button.text}
+					variant={props.icon && "arrow"}
+					icon={props.icon && "arrow-right"}
+				/>
 			</div>
 		</div>
 	);

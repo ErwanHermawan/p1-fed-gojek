@@ -32,7 +32,12 @@ const SectionFeature = (props) => {
 				{/* feature list */}
 				<div className={style.list}>
 					{item.map((val, idx) => (
-						<FeatureItem {...val} key={`kf-${idx}`} />
+						<FeatureItem
+							{...val}
+							section={bg && "product"}
+							icon={bg && "arrow"}
+							key={`kf-${idx}`}
+						/>
 					))}
 				</div>
 				{/* change background image */}

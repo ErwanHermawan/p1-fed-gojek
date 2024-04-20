@@ -5,18 +5,28 @@ import { Link } from "react-router-dom";
 import style from "./style.module.scss";
 
 const Button = (props) => {
-	const { to, text, type, icon } = props;
+	const { to, text, type, icon, variant = "primary" } = props;
+
+	let variantStyle = style.btn;
+	if (variant === "arrow") {
+		variantStyle += " " + style.btnArrow;
+	}
+	if (variant === "outline") {
+		variantStyle += " " + style.btnOutline;
+	}
+
+	console.log(variantStyle);
 
 	return (
 		<>
 			{to && (
-				<Link to={to} className={style.btn}>
+				<Link to={to} className={variantStyle}>
 					{text}
 					{icon && <i className={`fi-${icon}`}></i>}
 				</Link>
 			)}
 			{!to && (
-				<button type={type} className={style.btn}>
+				<button type={type} className={variantStyle}>
 					{text}
 					{icon && <i className={`fi-${icon}`}></i>}
 				</button>
