@@ -15,8 +15,6 @@ const Button = (props) => {
 		variantStyle += " " + style.btnOutline;
 	}
 
-	console.log(variantStyle);
-
 	return (
 		<>
 			{to && (

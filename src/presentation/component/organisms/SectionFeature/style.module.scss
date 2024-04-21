@@ -9,13 +9,11 @@
 	margin-top: -96px;
 	position: relative;
 	overflow: hidden;
+	color: color(white);
 }
 .product {
 	padding-bottom: 140px;
 	color: color(black);
-	.title {
-		color: color(black);
-	}
 }
 .red {
 	background-color: #ff808b;
@@ -32,7 +30,6 @@
 	@include font-size(h2);
 	font-family: ff(title);
 	margin-bottom: 16px;
-	color: color(white);
 }
 .list {
 	display: flex;

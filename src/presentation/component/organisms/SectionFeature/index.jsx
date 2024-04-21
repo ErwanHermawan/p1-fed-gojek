@@ -8,17 +8,16 @@ const SectionFeature = (props) => {
 	const { item, title, description, bg } = props;
 
 	let styleName = style.feature;
-	if (bg) {
-		styleName = style.feature += " " + style.product;
+	if (bg !== undefined) {
 		switch (bg.color) {
 			case "red":
-				styleName += " " + style.red;
+				styleName += " " + style.product + " " + style.red;
 				break;
 			case "purple":
-				styleName += " " + style.purple;
+				styleName += " " + style.product + " " + style.purple;
 				break;
 			default:
-				styleName = style.feature += " " + style.product;
+				styleName = style.feature;
 		}
 	}
 
