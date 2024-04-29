@@ -38,6 +38,11 @@ const dataHeader = {
 			name: "Help",
 			active: "help",
 		},
+		{
+			to: "/practice",
+			name: "Practice",
+			active: "practice",
+		},
 	],
 };
 

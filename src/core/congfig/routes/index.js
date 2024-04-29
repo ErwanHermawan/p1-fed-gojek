@@ -8,6 +8,7 @@ import Company from "presentation/container/pages/Company";
 import Products from "presentation/container/pages/Products";
 import Blog from "presentation/container/pages/Blog";
 import Help from "presentation/container/pages/Help";
+import Practice from "presentation/container/pages/Practice";
 // import Login from "presentation/container/pages/Login";
 // import Register from "presentation/container/pages/Register";
 import NotFound from "presentation/container/pages/NotFound";
@@ -40,6 +41,10 @@ const routes = [
 	{
 		path: "/help",
 		element: <Help />,
+	},
+	{
+		path: "/practice",
+		element: <Practice />,
 	},
 	{
 		path: "/not-found",

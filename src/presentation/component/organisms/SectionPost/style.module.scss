@@ -1,0 +1,29 @@
+@import "core/styles/_assets.scss";
+
+.section {
+	padding: 72px 0;
+}
+
+.title {
+	@include font-size(h1);
+	font-weight: fw(bold);
+	color: color(black);
+	margin-bottom: 24px;
+}
+
+.error {
+	@include font-size(h6);
+	font-weight: fw(regular);
+	color: color(white);
+}
+
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -8px;
+}
+
+.card {
+	width: 20%;
+	padding: 8px;
+}
